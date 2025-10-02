@@ -7,7 +7,7 @@ export const mastra = new Mastra({
   agents: { codingAgent },
   storage: new LibSQLStore({ url: 'file:../../mastra.db' }),
   logger: new PinoLogger({
-    name: 'Mastra',
+    name: 'coding_agent',
     level: process.env.NODE_ENV === 'production' ? 'info' : 'debug',
   }),
 });
